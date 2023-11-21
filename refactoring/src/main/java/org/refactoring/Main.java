@@ -5,7 +5,6 @@ import org.refactoring.animal.Dog;
 import org.refactoring.shape.Logger;
 import org.refactoring.shape.Shape;
 
-
 public class Main {
     public static void main(String[] args) {
         Dog dog = new Dog();
@@ -15,7 +14,6 @@ public class Main {
         cat.makeSound();
         dog.fetchBall();
         cat.chaseMouse();
-
 
         Shape shape = new Shape();
         shape.LogDrawing(new Logger());
