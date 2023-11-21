@@ -1,5 +1,7 @@
 package org.refactoring.animal;
 
+// Défaut : la méthode makeSound est répétée dans les classes Dog et Cat
+// Opération de Refactoring Visée : "Extract Superclass"
 public class Cat {
 
     private String name;
