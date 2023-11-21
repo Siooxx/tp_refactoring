@@ -1,6 +1,6 @@
 package org.refactoring.shape;
 
-class Logger
+public class Logger
 {
     public void Log(String msg)
     {

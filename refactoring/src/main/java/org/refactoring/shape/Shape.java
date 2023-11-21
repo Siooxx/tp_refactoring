@@ -2,10 +2,14 @@ package org.refactoring.shape;
 
 import java.awt.*;
 
-class Shape
+public class Shape
 {
     private Point pivot;
-    private void LogDrawing(Logger logger)
+
+    public Shape() {
+        pivot = new Point(1,2);
+    }
+    public void LogDrawing(Logger logger)
     {
         String msg = String.format("Shape is drawn at %d,  %d", pivot.x, pivot.y);
         logger.Log(msg);
