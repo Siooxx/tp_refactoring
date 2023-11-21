@@ -1,4 +1,4 @@
-package org.example.shape;
+package org.refactoring.shape;
 
 class Logger
 {
