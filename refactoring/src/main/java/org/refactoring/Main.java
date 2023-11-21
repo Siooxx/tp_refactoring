@@ -18,6 +18,6 @@ public class Main {
 
 
         Shape shape = new Shape();
-        shape.LogDrawing(new Logger());
+        new Logger().LogDrawing(shape);
     }
 }

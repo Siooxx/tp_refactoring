@@ -12,11 +12,6 @@ public class Shape
     public Shape() {
         pivot = new Point(1,2);
     }
-    public void LogDrawing(Logger logger)
-    {
-        String msg = String.format("Shape is drawn at %d,  %d", pivot.x, pivot.y);
-        logger.Log(msg);
-    }
 
     public Point getPivot() {
         return pivot;
