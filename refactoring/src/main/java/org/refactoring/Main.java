@@ -14,7 +14,7 @@ public class Main {
         cat.makeSound();
         dog.fetchBall();
         cat.chaseMouse();
-        
+
         Shape shape = new Shape();
         new Logger().LogDrawing(shape);
     }
