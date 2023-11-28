@@ -2,11 +2,9 @@ package org.refactoring.animal;
 
 // Défaut : la méthode makeSound est répétée dans les classes Dog et Cat
 // Opération de Refactoring Visée : "Extract Superclass"
-public class Cat {
+public class Cat extends Animal {
 
-    private String name;
-    private String color;
-
+    @Override
     public void makeSound() { System.out.println("Miaou"); }
 
     public void chaseMouse() { System.out.println("Le chat chasse une souris."); }
