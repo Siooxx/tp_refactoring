@@ -29,7 +29,7 @@ public class ListeTableau implements IGeneralCollection, IRandomAccess {
     int nbLT;
 }
 
-class ListeChainee implements IGeneralCollection, IRandomAccess, IQueueBehavior {
+class ListeChainee implements IRandomAccess, IQueueBehavior {
     @Override
     public boolean add(Object o) {
         return true;
@@ -60,7 +60,7 @@ class ListeChainee implements IGeneralCollection, IRandomAccess, IQueueBehavior 
 
 }
 
-class QueueDoubleEntree implements IGeneralCollection, IQueueBehavior {
+class QueueDoubleEntree implements IQueueBehavior {
     @Override
     public boolean add(Object o) {
         return true;
@@ -85,7 +85,7 @@ class QueueDoubleEntree implements IGeneralCollection, IQueueBehavior {
 
 }
 
-class QueueAvecPriorite implements IGeneralCollection, IQueueBehavior {
+class QueueAvecPriorite implements IQueueBehavior {
     @Override
     public boolean add(Object o) {
         return true;
