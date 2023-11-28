@@ -1,6 +1,10 @@
 package org.refactoring.liste;
 
-public class ListeTableau implements IList {
+import org.refactoring.liste.general.IGeneralCollection;
+import org.refactoring.liste.general.IQueueBehavior;
+import org.refactoring.liste.general.IRandomAccess;
+
+public class ListeTableau implements IGeneralCollection, IRandomAccess {
     @Override
     public boolean add(Object o) {
         return true;
@@ -14,12 +18,18 @@ public class ListeTableau implements IList {
     @Override
     public Object get(int i) {
         return null;
+    }
+
+    public void secretLT() {
+    }
+
+    public static void staticLT() {
     }
 
     int nbLT;
 }
 
-class ListeChainee implements IListChainee {
+class ListeChainee implements IGeneralCollection, IRandomAccess, IQueueBehavior {
     @Override
     public boolean add(Object o) {
         return true;
@@ -45,9 +55,12 @@ class ListeChainee implements IListChainee {
         return null;
     }
 
+    private void secretLC() {
+    }
+
 }
 
-class QueueDoubleEntree implements IQueueDoubleEntree {
+class QueueDoubleEntree implements IGeneralCollection, IQueueBehavior {
     @Override
     public boolean add(Object o) {
         return true;
@@ -68,9 +81,11 @@ class QueueDoubleEntree implements IQueueDoubleEntree {
         return null;
     }
 
+    private void secretQDE() {}
+
 }
 
-class QueueAvecPriorite implements IQueueAvecPriorite {
+class QueueAvecPriorite implements IGeneralCollection, IQueueBehavior {
     @Override
     public boolean add(Object o) {
         return true;
@@ -91,9 +106,10 @@ class QueueAvecPriorite implements IQueueAvecPriorite {
         return null;
     }
 
-    @Override
     public Object comparator() {
         return null;
     }
+
+    private void secretQAP() {}
 
 }
