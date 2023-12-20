@@ -30,4 +30,13 @@ Pour utiliser ce projet, clonez le dépôt et naviguez entre les différentes br
 ```bash
 git clone https://github.com/votreUsername/tp_refactoring.git
 cd tp_refactoring
-git checkout <nom_de_la_branche>
+mvn install
+```
+
+## Utilisation
+
+Pour démarrer l'application :
+
+```bash
+mvn spring-boot:run
+```
